@@ -29,8 +29,13 @@ BlueQuery is an Offline AI-powered system that converts natural language queries
 ## How to Run the Application
 
 Follow these steps to run BlueQuery on your system: 
+
 1. Clone the repository(git clone <repository-url>)
+
 2. (Optional) Create and activate a virtual environment(python -m venv venv)
+
 3. Install dependencies(pip install -r requirements.txt)
+
 4.Initialize the database (run once)(python setup_db.py)You can upload your own csv file to the database by modifying the setup_db.py file.
+
 5.Start the application(streamlit run app.py)
