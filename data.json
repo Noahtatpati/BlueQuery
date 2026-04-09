@@ -1,0 +1,20 @@
+[
+  {"input": "translate English to SQL: show all customers", "output": "SELECT * FROM customers;"},
+  {"input": "translate English to SQL: list all customers", "output": "SELECT * FROM customers;"},
+  {"input": "translate English to SQL: display all customers", "output": "SELECT * FROM customers;"},
+
+  {"input": "translate English to SQL: customers with spending greater than 1000", "output": "SELECT * FROM customers WHERE total_spent > 1000;"},
+  {"input": "translate English to SQL: customers who spent more than 1000", "output": "SELECT * FROM customers WHERE total_spent > 1000;"},
+
+  {"input": "translate English to SQL: show all products", "output": "SELECT * FROM products;"},
+  {"input": "translate English to SQL: list all products", "output": "SELECT * FROM products;"},
+
+  {"input": "translate English to SQL: top 3 products by price", "output": "SELECT * FROM products ORDER BY price DESC LIMIT 3;"},
+  {"input": "translate English to SQL: most expensive 3 products", "output": "SELECT * FROM products ORDER BY price DESC LIMIT 3;"},
+
+  {"input": "translate English to SQL: show all orders", "output": "SELECT * FROM orders;"},
+  {"input": "translate English to SQL: list all orders", "output": "SELECT * FROM orders;"},
+
+  {"input": "translate English to SQL: orders after 2023", "output": "SELECT * FROM orders WHERE year > 2023;"},
+  {"input": "translate English to SQL: orders placed after 2023", "output": "SELECT * FROM orders WHERE year > 2023;"}
+]
