@@ -3,10 +3,6 @@ import random
 import time
 from model import generate_sql
 from database import run_query
-import os
-
-if not os.path.exists("data.db"):
-    import setup_db
     
 st.set_page_config(page_title="BlueQuery", layout="centered")
 
