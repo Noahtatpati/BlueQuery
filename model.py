@@ -1,8 +1,7 @@
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
-# Load trained model
-model = T5ForConditionalGeneration.from_pretrained("./nl2sql-model")
-tokenizer = T5Tokenizer.from_pretrained("./nl2sql-model")
+model = T5ForConditionalGeneration.from_pretrained("t5-small")
+tokenizer = T5Tokenizer.from_pretrained("t5-small")
 
 model.eval()
 
@@ -13,8 +12,7 @@ def generate_sql(query):
     outputs = model.generate(
         **inputs,
         max_length=64,
-        num_beams=4,
-        do_sample=False
+        num_beams=4
     )
 
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
