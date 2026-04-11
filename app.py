@@ -185,3 +185,4 @@ with st.expander("View Database Schema"):
     """)
 
 st.markdown('</div>', unsafe_allow_html=True)
+st.info("**This app uses sample demo data for demonstration purposes.**")
